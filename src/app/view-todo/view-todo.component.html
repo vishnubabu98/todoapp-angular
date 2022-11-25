@@ -5,16 +5,15 @@
         <th scope="col">userId</th>
         <th scope="col">id</th>
         <th scope="col">title</th>
-        <th scope="col">Completed status</th>
+        <th scope="col">Completed</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+      <tr *ngFor="let i of data">
+        <th scope="row">{{i.userId}}</th>
+        <td>{{i.id}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.completed}}</td>
       </tr>
-    
-</tbody>
+  </tbody>
 </table>
